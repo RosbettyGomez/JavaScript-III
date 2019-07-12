@@ -34,6 +34,22 @@ myObj.myQuote();
 
 // code example for New Binding
 
+function Person(greeter){
+    this.greeting = 'Hey';
+    this.greeter = greeter;
+    this.speak = function() {
+        consile.log(this.greeting + this.greeter);
+        console.log(this);
+    };
+}
+const Rose= new Person('Ben');
+const Ben= new Person('Rose');
+
+Rose.speak();
+Ben.speak();
+
+
+
 // Principle 4
 
 // code example for Explicit Binding
